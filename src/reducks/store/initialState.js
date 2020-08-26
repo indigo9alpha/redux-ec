@@ -4,6 +4,7 @@
 
    },
    users: {
+     cart:[],
      isSignedIn: false,
      role:'',
      uid:"",

@@ -2,7 +2,12 @@ import * as Actions from './actions'
 import initialState from '../store/initialState'
 
 export const UserReducer = (state = initialState.users, action) => {
-  switch(action.type) {
+  switch (action.type) {
+    case Actions.FETCH_PRODUCTS_IN_CART:
+      return {
+        ...state,
+        cart:[...action.payload]
+      }
     case Actions.SIGN_IN:
       return {
         ...state,

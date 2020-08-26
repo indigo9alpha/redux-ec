@@ -16,3 +16,8 @@ export const getUserName = createSelector(
   [userSelector],
   state => state.username
 )
+
+export const getProductsInCart = createSelector(
+  [userSelector],
+  state => state.cart
+)
